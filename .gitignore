@@ -1,5 +1,9 @@
 node_modules
 dist/
+
+
+
+no-subir.txt
 # Logs
 logs
 *.log
