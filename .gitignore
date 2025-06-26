@@ -2,8 +2,13 @@ node_modules
 dist/
 
 
+<<<<<<< HEAD
 *.txt
 no-subir.txt
+=======
+
+.txt
+>>>>>>> 66137439cb37ffa8bf110f7e4f5721534e417137
 # Logs
 logs
 *.log
