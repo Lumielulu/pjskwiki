@@ -1,13 +1,19 @@
 import './index.css'
+import { SearchBar } from './components/SearchBar'
+import { FillAllCharacters } from './components/GetAllCharacters'
+
 
 function App() {
 
   return (
-    <div className=" flex justify-center items-center h-64 bg-gray-200
-    
-    
-    
-    ">HOLA MUNDO</div> 
+    <div id='APP-CONTAINER'>
+      <div id='SEARCH-BAR-COMPONENT'>
+          <SearchBar></SearchBar>
+      </div>
+      <div id='CARDS-CONTAINER-COMPONENT'>
+        <FillAllCharacters></FillAllCharacters>
+      </div>
+    </div>
   )
 }
 

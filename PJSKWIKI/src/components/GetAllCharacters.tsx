@@ -11,6 +11,7 @@ interface card{
     CharacterName: string,
     date: string,
     image: string, //utiliza la url de amazon web services S3
+    image_trained: string
 }
 
 
@@ -54,7 +55,7 @@ export function FillAllCharacters(){
                 setCharacters(result)
 
             } catch (error) {
-                return alert('FATAL ERROR!!!!!')
+                return alert('error al obtener las cartas!')
             }finally{
                 setLoading(!loading)
             }

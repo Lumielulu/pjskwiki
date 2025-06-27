@@ -6,6 +6,7 @@ interface CardData{
     nombre: string;
     descripcion: string;
     foto: string;
+    foto_entrenada: string
     fechaSalida: string;
 }
 
@@ -18,13 +19,14 @@ interface props{
 //ESTA FUNCION RELLENA LA CARTA A BASAE DE LO OBTENIDO EN FULL FILL CARD
 export function Card({data}: {data : CardData}){
 
-    const { nombre, descripcion, foto, fechaSalida } = data;
+    const { nombre, descripcion, foto,foto_entrenada, fechaSalida } = data;
     return(
 
         <>
             <div id="CARD-CONTENT">
                 <div id='CARD-PHOTO'>
                     <img src={foto} alt="CARD-PHOTO"/>
+                    <img src={foto_entrenada} alt="CARD-TRAINED-PHOTO"/>
                 </div>
                 <div id='CARD-DESCRIPTION'>
                     <p id='P-NAME'>{nombre}</p>

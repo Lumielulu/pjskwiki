@@ -2,8 +2,7 @@ node_modules
 dist/
 
 
-*.txt
-no-subir.txt
+backend/
 # Logs
 logs
 *.log
